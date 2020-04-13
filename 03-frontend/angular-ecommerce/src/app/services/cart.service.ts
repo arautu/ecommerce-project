@@ -55,7 +55,7 @@ export class CartService {
     }
     // Publish the new values ... all subscribers will receive the new data.
     this.totalPrice.next(totalPriceValue);
-    this.totalPrice.next(totalQuantityValue);
+    this.totalQuantity.next(totalQuantityValue);
 
     // Log cart data just for debugging purposes
     this.logCartData(totalPriceValue, totalQuantityValue);
